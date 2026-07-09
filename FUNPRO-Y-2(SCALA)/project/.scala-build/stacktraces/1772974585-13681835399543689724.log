@@ -1,0 +1,95 @@
+java.io.IOException: Cannot run program "/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home/bin/java" (in directory "/Users/mba135816/Documents/GitHub/IT-KMITl/FUNPRO-Y-2(SCALA)/project"): Failed to exec spawn helper: pid: 1908, signal: 15, error: 0 (none) 
+Possible reasons:
+  - Spawn helper ran into JDK version mismatch
+  - Spawn helper ran into unexpected internal error
+  - Spawn helper was terminated by another process
+Possible solutions:
+  - Restart JVM, especially after in-place JDK updates
+  - Check system logs for JDK-related errors
+  - Re-install JDK to fix permission/versioning problems
+  - Switch to legacy launch mechanism with -Djdk.lang.Process.launchMechanism=FORK
+
+  java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1112)
+  java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1046)
+  os.proc.proc$lzyINIT1$1(ProcessOps.scala:345)
+  os.proc.os$proc$$_$proc$1(ProcessOps.scala:351)
+  os.proc.spawn(ProcessOps.scala:355)
+  os.proc.call(ProcessOps.scala:224)
+  scala.build.internal.OsLibc$.javaVersion(OsLibc.scala:78)
+  scala.build.options.BuildOptions$JavaHomeInfo$.apply(BuildOptions.scala:636)
+  scala.build.options.BuildOptions.javaCommand0$lzyINIT1$$anonfun$1(BuildOptions.scala:239)
+  scala.build.Positioned.map(Positioned.scala:15)
+  scala.build.options.BuildOptions.javaCommand0$lzyINIT1(BuildOptions.scala:239)
+  scala.build.options.BuildOptions.javaCommand0(BuildOptions.scala:239)
+  scala.build.options.BuildOptions.javaHome(BuildOptions.scala:247)
+  scala.cli.commands.repl.Repl$.defaultArtifacts$1$$anonfun$1(Repl.scala:458)
+  scala.build.EitherCps$Helper.apply(EitherCps.scala:19)
+  scala.cli.commands.repl.Repl$.defaultArtifacts$1(Repl.scala:445)
+  scala.cli.commands.repl.Repl$.runRepl$$anonfun$1(Repl.scala:494)
+  scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+  scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+  scala.build.EitherCps$Helper.apply(EitherCps.scala:19)
+  scala.cli.commands.repl.Repl$.runRepl(Repl.scala:300)
+  scala.cli.commands.repl.Repl$.doRunRepl$1(Repl.scala:153)
+  scala.cli.commands.repl.Repl$.runThing$1(Repl.scala:205)
+  scala.cli.commands.repl.Repl$.runCommand(Repl.scala:208)
+  scala.cli.commands.default.Default.runCommand(Default.scala:61)
+  scala.cli.commands.default.Default.runCommand(Default.scala:40)
+  scala.cli.commands.ScalaCommand.run(ScalaCommand.scala:400)
+  scala.cli.commands.ScalaCommand.run(ScalaCommand.scala:381)
+  caseapp.core.app.CaseApp.main(CaseApp.scala:166)
+  scala.cli.commands.ScalaCommand.main(ScalaCommand.scala:366)
+  caseapp.core.app.CommandsEntryPoint.main(CommandsEntryPoint.scala:370)
+  scala.cli.ScalaCliCommands.main(ScalaCliCommands.scala:125)
+  scala.cli.ScalaCli$.main0(ScalaCli.scala:324)
+  scala.cli.ScalaCli$.main(ScalaCli.scala:122)
+  scala.cli.ScalaCli.main(ScalaCli.scala)
+java.io.IOException: Failed to exec spawn helper: pid: 1908, signal: 15, error: 0 (none) 
+Possible reasons:
+  - Spawn helper ran into JDK version mismatch
+  - Spawn helper ran into unexpected internal error
+  - Spawn helper was terminated by another process
+Possible solutions:
+  - Restart JVM, especially after in-place JDK updates
+  - Check system logs for JDK-related errors
+  - Re-install JDK to fix permission/versioning problems
+  - Switch to legacy launch mechanism with -Djdk.lang.Process.launchMechanism=FORK
+
+  java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+  java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:300)
+  java.base/java.lang.ProcessImpl.start(ProcessImpl.java:231)
+  java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1078)
+  java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1046)
+  os.proc.proc$lzyINIT1$1(ProcessOps.scala:345)
+  os.proc.os$proc$$_$proc$1(ProcessOps.scala:351)
+  os.proc.spawn(ProcessOps.scala:355)
+  os.proc.call(ProcessOps.scala:224)
+  scala.build.internal.OsLibc$.javaVersion(OsLibc.scala:78)
+  scala.build.options.BuildOptions$JavaHomeInfo$.apply(BuildOptions.scala:636)
+  scala.build.options.BuildOptions.javaCommand0$lzyINIT1$$anonfun$1(BuildOptions.scala:239)
+  scala.build.Positioned.map(Positioned.scala:15)
+  scala.build.options.BuildOptions.javaCommand0$lzyINIT1(BuildOptions.scala:239)
+  scala.build.options.BuildOptions.javaCommand0(BuildOptions.scala:239)
+  scala.build.options.BuildOptions.javaHome(BuildOptions.scala:247)
+  scala.cli.commands.repl.Repl$.defaultArtifacts$1$$anonfun$1(Repl.scala:458)
+  scala.build.EitherCps$Helper.apply(EitherCps.scala:19)
+  scala.cli.commands.repl.Repl$.defaultArtifacts$1(Repl.scala:445)
+  scala.cli.commands.repl.Repl$.runRepl$$anonfun$1(Repl.scala:494)
+  scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+  scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+  scala.build.EitherCps$Helper.apply(EitherCps.scala:19)
+  scala.cli.commands.repl.Repl$.runRepl(Repl.scala:300)
+  scala.cli.commands.repl.Repl$.doRunRepl$1(Repl.scala:153)
+  scala.cli.commands.repl.Repl$.runThing$1(Repl.scala:205)
+  scala.cli.commands.repl.Repl$.runCommand(Repl.scala:208)
+  scala.cli.commands.default.Default.runCommand(Default.scala:61)
+  scala.cli.commands.default.Default.runCommand(Default.scala:40)
+  scala.cli.commands.ScalaCommand.run(ScalaCommand.scala:400)
+  scala.cli.commands.ScalaCommand.run(ScalaCommand.scala:381)
+  caseapp.core.app.CaseApp.main(CaseApp.scala:166)
+  scala.cli.commands.ScalaCommand.main(ScalaCommand.scala:366)
+  caseapp.core.app.CommandsEntryPoint.main(CommandsEntryPoint.scala:370)
+  scala.cli.ScalaCliCommands.main(ScalaCliCommands.scala:125)
+  scala.cli.ScalaCli$.main0(ScalaCli.scala:324)
+  scala.cli.ScalaCli$.main(ScalaCli.scala:122)
+  scala.cli.ScalaCli.main(ScalaCli.scala)

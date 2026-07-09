@@ -86,19 +86,19 @@ object Main extends App {
   //   data = data
   // )
 
-  // runBenchmark(
-  //   name = "Year Aggregation",
-  //   folder = "yearAggregation",
-  //   seqFunc = YearAggregation.aggregateSeq,
-  //   parFunc = YearAggregation.aggregateParallel,
-  //   data = data
-  // )
-
   runBenchmark(
-    name = "All Tasks",
-    folder = "allTasks",
-    seqFunc = AllTasks.runSeq,
-    parFunc = AllTasks.runParallel,
+    name = "Year Aggregation",
+    folder = "yearAggregation",
+    seqFunc = YearAggregation.aggregateSeq,
+    parFunc = YearAggregation.aggregateParallel,
     data = data
   )
+
+  // runBenchmark(
+  //   name = "All Tasks",
+  //   folder = "allTasks",
+  //   seqFunc = AllTasks.runSeq,
+  //   parFunc = AllTasks.runParallel,
+  //   data = data
+  // )
 }
